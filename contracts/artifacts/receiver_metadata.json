@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "msgvalue",
+						"type": "bytes"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "etc",
+						"type": "uint256"
+					}
+				],
+				"name": "abc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/L41-FunctionSelector.sol": "receiver"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/L41-FunctionSelector.sol": {
+			"keccak256": "0x20d45832352cb3bc64d332c0ba7576fbc485ec1b331d5e8edd16fcd0740e2c4c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2222f9e37dbed546740f198591ef51feba71b0263df0660d017eeae5acca84d5",
+				"dweb:/ipfs/QmdW5Y4QzbaFkT9HpKhzGAq8bkcj4qCx1Vy5jEtzUjAJXh"
+			]
+		}
+	},
+	"version": 1
+}

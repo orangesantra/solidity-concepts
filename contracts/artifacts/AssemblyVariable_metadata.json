@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "yul_let",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "z",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/L55-Assembly_Variable.sol": "AssemblyVariable"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/L55-Assembly_Variable.sol": {
+			"keccak256": "0x451887264b5b06cd4af7696260e97686c56c63d5a01e16f4a5e59803ebdacaa8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a40227121ca8427e027a7ae32db03142c162a9e3bd03bd346476831ed342c03e",
+				"dweb:/ipfs/QmeZEiSNVrd61V6yjBwJPN4Mc45RXNg41hwqNUt8XqEASR"
+			]
+		}
+	},
+	"version": 1
+}
