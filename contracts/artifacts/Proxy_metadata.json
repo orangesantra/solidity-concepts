@@ -1,58 +1,88 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.25+commit.b61c2a91"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
 					{
-						"indexed": false,
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "Deploy",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes",
-						"name": "_code",
-						"type": "bytes"
-					}
-				],
-				"name": "deploy",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "addr",
-						"type": "address"
-					}
-				],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_target",
+						"name": "_admin",
 						"type": "address"
-					},
-					{
-						"internalType": "bytes",
-						"name": "_data",
-						"type": "bytes"
 					}
 				],
-				"name": "execute",
+				"name": "changeAdmin",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "slot",
+						"type": "uint256"
+					}
+				],
+				"name": "readStorageSlot",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_implementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -73,9 +103,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/L19- Deploy any Contract [IMP}.sol": "Proxy"
+			"contracts/L63-Transparent-Proxy-Contract.sol": "Proxy"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -87,12 +117,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/L19- Deploy any Contract [IMP}.sol": {
-			"keccak256": "0xaa353302ee42e17b48121a0ed4274228eeb516df9220ff406f26962fca401ea7",
+		"contracts/L63-Transparent-Proxy-Contract.sol": {
+			"keccak256": "0x61a83fbdc207113b931869ce4796c806fc681cbd6c3452da3a0db449e3cff39d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e41418e5e48634080278e50f8c3296b619475e2544e6d0849705e4effa1592c2",
-				"dweb:/ipfs/QmdcuzdyRvKL8nkcgskTrp83FMqcbrSiJBVmJ6jWm7boxB"
+				"bzz-raw://09fab365ba3578459b26036651752df7f42986263350aba7ce318467a700e467",
+				"dweb:/ipfs/QmeHGBSeY139JDzrPTMcPgbaNpR1sokpwCdKnV9AtsYVh5"
 			]
 		}
 	},

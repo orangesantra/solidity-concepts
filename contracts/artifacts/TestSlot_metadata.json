@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.25+commit.b61c2a91"
 	},
 	"language": "Solidity",
 	"output": {
@@ -58,9 +58,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/L63-Proxy-Contract.sol": "TestSlot"
+			"contracts/L63-Transparent-Proxy-Contract.sol": "TestSlot"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -72,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/L63-Proxy-Contract.sol": {
-			"keccak256": "0xb69e399af65170086a97f363a432dfae8de1ff1f3de7b7e4012465942663bc55",
+		"contracts/L63-Transparent-Proxy-Contract.sol": {
+			"keccak256": "0x61a83fbdc207113b931869ce4796c806fc681cbd6c3452da3a0db449e3cff39d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://41f6a42b16edd23dea6df3f70babcdd70d099543a29f48caae9339f4b418a00b",
-				"dweb:/ipfs/QmPYw3tkKdURidoj7RqSDnzaRJ4mptb4LXM7CbikbbKbX8"
+				"bzz-raw://09fab365ba3578459b26036651752df7f42986263350aba7ce318467a700e467",
+				"dweb:/ipfs/QmeHGBSeY139JDzrPTMcPgbaNpR1sokpwCdKnV9AtsYVh5"
 			]
 		}
 	},
