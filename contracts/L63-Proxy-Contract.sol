@@ -158,6 +158,13 @@ contract Proxy {
         }
     }
 
+    function readStorageSlot(uint256 slot) external view returns (bytes32 data) {
+        assembly {
+            // Load the value from the storage slot passed as argument
+            data := sload(slot)
+        }
+    }
+
     function _getAdmin() private view returns (address) {
         return StorageSlot.getAddressSlot(ADMIN_SLOT).value;
     }
@@ -315,3 +322,9 @@ contract TestSlot {
         StorageSlot.getAddressSlot(slot).value = _addr;
     }
 }
+
+// @mnotes - fallback cannot return value, that's why assembly is used.
+// @mnotes - to avoide storage collision between proxy and implementation, we use custom storage slot in proxy, though still
+// when any update in implementation storge is done, the subsequent storage slot in proxy storage will also be updated this can be
+// verified by readStorageSlot(uint256 slot) function.
+// @mnotes - Proxy admin is main contract.
